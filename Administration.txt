@@ -1,0 +1,129 @@
+
+ADMINISTRATION DER WEBSITE www.wilfried-fitzenreiter.de
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Archivseite 1:
+
+NEUEN ÜBERPUNKT HINZUFÜGEN:
+
+.
+.
+.
+<div>
+    <h1 class="button" onclick="openList(x)">           ---> x muss eines größer als die Zahl im Überpunkt darüber sein.
+        neuer Überpunkt                                      Beim Einfügen in der Mitte müssen die folgenden Überpunkte angepasst werden!
+    </h1>
+    <ul>
+        <li>
+            Unterpunkt
+        </li>
+        .
+        .
+        .
+    </ul>
+</div>
+.
+.
+.
+
+NEUEN UNTERPUNKT HINZUFÜGEN:
+
+.                                   .
+.                                   .
+    anderer Unterpunkt              .
+</li>                               <ul>
+<li>                                    <li>
+    neuer Unterpunkt        oder:           neuer Unterpunkt
+</li>                                   </li>
+<li>                                    <li>
+.                                       .
+.                                       .
+.                                       .
+
+zwischen zwei Unterpunkten              Direkt unter einem Überpunkt
+
+NEUEN UNTERPUNKT MIT LINK HINZUFÜGEN:
+
+wie oben aber mit folgendem Einschub an der Stelle an der der Link auftreten soll:
+
+<li>
+    blablabla <a href="Linkadresse.de" target="_blank"> Linktext wie er erscheinen soll</a> blablabla
+</li>
+
+falls ein pdf verlinkt wird: bei der Linkadresse den pfad des pdfs, also: resources/PDF/PDFname.pdf, eingeben
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Archivseite 2:
+
+PDF ANPASSEN:
+
+Ein vorhandenes pdf kann einfach überschrieben werden es muss nur mit dem selben Namen in resources/PDF abgespeichert werden.
+
+NEUES PDF EINBINDEN:
+
+Das neue PDF in resources/PDF abspeichern.
+Für das Titelbild habe ich einen Bildschirmscreenshot mit Win+Shift+S gemacht, das Bild gespeichert.
+Dann habe ich das Bild mit Paint geöffnet, die Höhe auf 150px gesetzt und es als .jpg in resources/pictures abgespeichert.
+
+.
+.
+.
+</a>
+<a class="pdfButton" href="resources/PDF/*Name des PDF*.pdf" target="_blank">
+    <h1>
+        *Gewünschter Titel*
+    </h1>
+    <img src="resources/pictures/*Name des Titelbildes*.jpg" alt="Titel" width="*Breite des Titelbildes(zb. 200)*" height="*Höhe des Titelbildes(zb. 150)*">
+</a>
+.
+.
+.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Archivseite 3:
+
+Kombination aus Archivseite 1 und 2
+
+NEUEN ÜBERPUNKT HINZUFÜGEN:
+
+<div>
+    <h2 class="button" onclick="openList(x)">           ---> Auch hier muss x wieder eines höher sein, als der vorherige Überpunkt.
+        *neue Überkategorie*
+    </h2>
+    <ul>
+        <li>
+            Unterpunkt
+        </li>
+        .
+        .
+        .
+    </ul>
+</div>
+
+NEUEN UNTERPUNKT HINZUFÜGEN:
+
+siehe Methode Archivseite 2.
+
+der Teil aus Archiseite 2 muss dann zwischen <li> und </li> geschrieben werden, also:
+
+<div>
+    <h2 class="button" onclick="openList(x)">
+        Überpunkt
+    </h2>
+    <ul>
+        <li>
+            <a class="pdfButton" href="resources/PDF/*Name des PDF*.pdf" target="_blank">
+                <h1>
+                    *Gewünschter Titel*
+                </h1>
+                <img src="resources/pictures/*Name des Titelbildes*.jpg" alt="Titel" width="*Breite des Titelbildes(zb. 200)*" height="*Höhe des Titelbildes(zb. 150)*">
+            </a>    
+        </li>
+        .
+        .
+        .
+    </ul>
+</div>

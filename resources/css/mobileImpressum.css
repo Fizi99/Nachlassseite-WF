@@ -1,0 +1,70 @@
+html {
+    background: white;
+    font-family: Arial;
+	font-size: 16px;
+}
+
+body {
+    margin: 0px;
+}
+
+header nav {
+    background-color: #6D6D6D;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+#topnav {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#topnav li{
+    width: 50%;
+    padding-top: 0.3em;
+}
+
+#topnav li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#topnav .mobileline{
+    width: 100%;
+    padding-top: 0;
+}
+
+#topnav .mobileline div{
+    background-color: #fff;
+    height: 0.2em;
+    border-radius: 0.2em;
+}
+
+#topnav li a:hover{
+    color: #000;
+}
+
+#topnav li:nth-child(3n+2){
+    text-align: right;
+}
+
+#menue {
+    display: block;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+#impressum {
+    max-width: 100%;
+}
